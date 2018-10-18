@@ -48,7 +48,7 @@ export class RecipeSearchComponent implements OnInit {
 
     this.page = this.page - 1;
     ingridients = (ingridients) ? ingridients.toString() : '';
-    this.getRecipesFromService(query, ingridients, page);
+    this.getRecipesFromService(query, ingridients, this.page);
   }
 
 }
