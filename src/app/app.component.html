@@ -1,0 +1,20 @@
+<section class="app">
+
+  <div class="header">
+    <a href="/"><h1 class="page-title">{{title}}</h1></a>
+  </div>
+
+  <div class="search-inputs">
+    <recipe-search></recipe-search>
+  </div>
+
+  <div class="search-results">
+    <recipes-list></recipes-list>
+    <div *ngIf="loaderService.isLoading | async" class="lds-dual-ring"></div>
+  </div>
+
+  <div class="footer">
+    <p class="copyright">Copyright Dejan Lužnic 18.10.2018</p>
+  </div>
+
+</section>
