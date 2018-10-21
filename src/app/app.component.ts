@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { LoaderService } from './preloader/loader.service';
+import { LoaderService } from './shared/preloader/loader.service';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,8 @@ import { LoaderService } from './preloader/loader.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'Recipes search app';
 
-  constructor(public loaderService: LoaderService, private http: HttpClient) {
-  }
-
+  constructor(public loaderService: LoaderService) { }
 }

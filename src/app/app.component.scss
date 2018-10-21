@@ -1,7 +1,5 @@
-@import 'recipes-search/recipe-search.component.scss';
-@import 'recipes-list/recipes-list.component.scss';
-
-$gray-bg: #f2f2f2;
+@import 'recipes/recipes-search/recipes-search.component.scss';
+@import 'recipes/recipes-list/recipes-list.component.scss';
 
 body {
   margin: 0;

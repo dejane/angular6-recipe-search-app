@@ -1,0 +1,10 @@
+<mat-grid-list [cols]="breakpoint" [rowHeight]="rowSize" >
+  <mat-grid-tile *ngFor="let rec of recipes.results">
+    <div class="single-recipe">
+        <img class="recipe-img" src="{{ rec.thumbnail }}" class="img-fluid">
+        <h2 class="recipe-title">{{ rec.title }}</h2>
+        <p>{{ rec.ingredients }}</p>
+        <a class="recipe-href" target="_blank" href="{{ rec.href }}">Read more</a>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>
